@@ -1,5 +1,5 @@
 #!/bin/bash
-#SSH_PORT="22"
+SSH_PORT="22"
 #DB_PASSWORD="database_password"
 #DB_NAME="database_name"
 #DB_USER="database_user"
