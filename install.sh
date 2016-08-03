@@ -116,11 +116,11 @@ php7.0-mcrypt php7.0-json php-xml php7.0-mbstring php7.0-gd php7.0-zip
 
 
 #---- Install MySQL
-apt-get install mysql-server -y
+apt-get install mariadb-server -y
 cd /var/www/html
 #git clone --depth=1 --branch=STABLE https://github.com/phpmyadmin/phpmyadmin.git
-cd $cwd
-
+#cd $cwd
+apt-get install phpmyadmin
 #mysql_install "$DB_PASSWORD" && mysql_tune 40
 #mysql_create_database "$DB_PASSWORD" "$DB_NAME"
 #mysql_create_user "$DB_PASSWORD" "$DB_USER" "$DB_USER_PASSWORD"
