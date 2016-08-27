@@ -145,6 +145,14 @@ npm install npm -g
 npm install -g gulp bower gulp-bower node-sass coffee-script node-gyp
 export DISABLE_NOTIFIER=true;
 
+#install some image libraries needed for image-min
+npm install -g jpegtran-bin gifsicle optipng-bin
+
+#install phantomjs
+sudo curl --output /usr/local/bin/phantomjs https://s3.amazonaws.com/circle-downloads/phantomjs-2.1.1
+chmod +x /usr/local/bin/phantomjs
+
+
 #----- install linux-dash and virtualhost, letsencrypt
 cd /var/www/html
 git clone https://github.com/afaqurk/linux-dash.git
