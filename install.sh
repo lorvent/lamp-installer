@@ -139,10 +139,10 @@ mv composer.phar /usr/local/bin/composer
 
 
 #---- nodejs setup
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install npm -g
-npm install -g gulp bower gulp-bower node-sass coffee-script node-gyp
+npm install -g gulp bower gulp-bower node-sass coffee-script node-gyp yarn
 export DISABLE_NOTIFIER=true;
 
 #install some image libraries needed for image-min
