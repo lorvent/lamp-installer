@@ -111,7 +111,7 @@ apt-get install software-properties-common -y --force-yes
 add-apt-repository ppa:ondrej/php -y
 apt-get update
 apt-get install -y --force-yes php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-curl \
-php7.0-mcrypt php7.0-json php-xml php7.0-mbstring php7.0-gd php7.0-zip 
+php7.0-mcrypt php7.0-json php7.0-xml php7.0-mbstring php7.0-gd php7.0-zip 
 
 
 
