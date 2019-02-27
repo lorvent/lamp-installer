@@ -104,7 +104,7 @@ cp /etc/apache2/apache2.conf /etc/apache2/apache2.backup.conf
 sed -i 's/KeepAlive On/KeepAlive Off/' /etc/apache2/apache2.conf
 
 #---- Instal additional packages
-apt-get install nano git curl zsh -y
+apt-get install nano git curl zsh unzip -y
 
 #---- Install PHP
 apt-get install software-properties-common -y --force-yes
@@ -117,10 +117,7 @@ php7.1-mcrypt php7.1-json php7.1-xml php7.1-mbstring php7.1-gd php7.1-zip
 
 #---- Install MySQL
 apt-get install mariadb-server -y
-cd /var/www/html
-#git clone --depth=1 --branch=STABLE https://github.com/phpmyadmin/phpmyadmin.git
-#cd $cwd
-apt-get install phpmyadmin
+apt-get install phpmyadmin -y
 #mysql_install "$DB_PASSWORD" && mysql_tune 40
 #mysql_create_database "$DB_PASSWORD" "$DB_NAME"
 #mysql_create_user "$DB_PASSWORD" "$DB_USER" "$DB_USER_PASSWORD"
@@ -142,15 +139,8 @@ mv composer.phar /usr/local/bin/composer
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install npm -g
-npm install -g gulp bower gulp-bower node-sass coffee-script node-gyp yarn
+npm install -g node-gyp yarn
 export DISABLE_NOTIFIER=true;
-
-#install some image libraries needed for image-min
-npm install -g jpegtran-bin gifsicle optipng-bin
-
-#install phantomjs
-sudo curl --output /usr/local/bin/phantomjs https://s3.amazonaws.com/circle-downloads/phantomjs-2.1.1
-chmod +x /usr/local/bin/phantomjs
 
 
 #----- install linux-dash and virtualhost, letsencrypt
