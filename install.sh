@@ -110,8 +110,8 @@ apt-get install nano git curl zsh unzip -y
 apt-get install software-properties-common -y --force-yes
 add-apt-repository ppa:ondrej/php -y
 apt-get update
-apt-get install -y --force-yes php7.1 libapache2-mod-php7.1 php7.1-mysql php7.1-curl \
-php7.1-mcrypt php7.1-json php7.1-xml php7.1-mbstring php7.1-gd php7.1-zip 
+apt-get install -y --force-yes php7.2 libapache2-mod-php7.2 php7.2-mysql php7.2-curl \
+php7.2-mcrypt php7.2-json php7.2-xml php7.2-mbstring php7.2-gd php7.2-zip 
 
 
 
