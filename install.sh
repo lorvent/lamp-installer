@@ -139,6 +139,9 @@ mv composer.phar /usr/local/bin/composer
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install npm -g
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+apt-get update
 npm install -g node-gyp yarn
 export DISABLE_NOTIFIER=true;
 
